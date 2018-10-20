@@ -10,58 +10,45 @@
 <body>
     <header>
         <div class="container">
-
         </div>
-
     </header>
     <section class="main">
         <div class="container">
             <div class="calculator-block">
-                <div class="display">
-                    <input class="display_input" type="text">
-                </div>
-                <div class="button-block row">
-                    <div class="number-block col-md-7">
+                <form action="">
+                    <div class="display">
+                        <input maxlength="11" class="display__input" type="text">
+                    </div>
+                    <div class="button-block">
                         <div>
-                            <button class="number-block__button">7</button>
-                            <button class="number-block__button">8</button>
-                            <button class="number-block__button">9</button>
+                            <button type="button" value="7" class="button-block__button"></button>
+                            <button type="button" value="8" class="button-block__button"></button>
+                            <button type="button" value="9" class="button-block__button"></button>
+                            <button type="button" value="&#247;" class="button-block__button"></button>
+                            <button type="button" value="%" class="button-block__button"></button>
                         </div>
                         <div>
-                            <button class="number-block__button">4</button>
-                            <button class="number-block__button">5</button>
-                            <button class="number-block__button">6</button>
+                            <button type="button" value="4" class="button-block__button"></button>
+                            <button type="button" value="5" class="button-block__button"></button>
+                            <button type="button" value="6" class="button-block__button"></button>
+                            <button type="button" value="&#215;" class="button-block__button"></button>
+                            <button type="button" value="&#8730;" class="button-block__button"></button>
                         </div>
                         <div>
-                            <button class="number-block__button">1</button>
-                            <button class="number-block__button">2</button>
-                            <button class="number-block__button">3</button>
+                            <button type="button" value="1" class="button-block__button"></button>
+                            <button type="button" value="2" class="button-block__button"></button>
+                            <button type="button" value="3" class="button-block__button"></button>
+                            <button type="button" value="-" class="button-block__button"></button>
+                            <button type="button" value="+" class="button-block__button"></button>
                         </div>
                         <div>
-                            <button class="number-block__button_double">0</button>
-                            <button class="number-block__button">,</button>
+                            <button type="button" value="0" class="button-block__button"></button>
+                            <button type="button" value="," class="button-block__button"></button>
+                            <button type="button" value="c" class="button-block__clear"></button>
+                            <button type="button" value="=" class="button-block__equal" id="da"></button>
                         </div>
                     </div>
-                    <div class="operations-block col-md-5">
-                        <div>
-                            <button class="operations-block__button">&#247;</button>
-                            <button class="operations-block__button">&#8730;</button>
-                        </div>
-                        <div>
-                            <button class="operations-block__button">&#215;</button>
-                            <button class="operations-block__button">%</button>
-                        </div>
-                        <div>
-                            <button class="operations-block__button">-</button>
-                            <button class="operations-block__button">+</button>
-                        </div>
-                        <div>
-                            <button class="operations-block__button">=</button>
-                            <button class="operations-block__button">с</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </form>
             </div>
         </div>
     </section>

@@ -16,24 +16,31 @@ header {
     height: 500px;
     width: 400px;
     background-color: rgba(84,109,255,0.31);
+    border: 3px black solid;
+    box-shadow: 0 0 15px;
 }
 
-.display_input {
+.display__input {
     height: 150px;
     width: 100%;
-}
-
-.number-block__button, .operations-block__button {
-    height: 60px;
-    width: 70px;
-}
-
-.number-block__button_double {
-    width: 144px;
-    height: 60px;
+    font-size: 70px;
+    padding: 5px;
+    border: 3px black solid;
 }
 
 .button-block {
-    /*margin: 0 0 0 0;*/
-    margin-top: 100px;
+    margin-left: 14px;
+    margin-top: 90px;
+}
+
+.button-block__button, .button-block__clear {
+    height: 60px;
+    width: 70px;
+    border: 1px black solid;
+}
+
+.button-block__equal {
+    height: 60px;
+    width: 144px;
+    border: 1px black solid;
 }
