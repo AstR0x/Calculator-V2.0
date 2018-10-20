@@ -1,0 +1,39 @@
+@import url(reset.css);
+
+.container {
+    height: 100%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    background-color: azure;
+}
+
+.calculator-block {
+    margin-top: 100px;
+    height: 500px;
+    width: 400px;
+    background-color: rgba(84,109,255,0.31);
+}
+
+.display_input {
+    height: 150px;
+    width: 100%;
+}
+
+.number-block__button, .operations-block__button {
+    height: 60px;
+    width: 70px;
+}
+
+.number-block__button_double {
+    width: 144px;
+    height: 60px;
+}
+
+.button-block {
+    /*margin: 0 0 0 0;*/
+    margin-top: 100px;
+}
