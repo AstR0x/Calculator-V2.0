@@ -26,6 +26,7 @@ header {
     font-size: 70px;
     padding: 5px;
     border: 3px black solid;
+    border-radius: 3px;
 }
 
 .button-block {
@@ -33,14 +34,29 @@ header {
     margin-top: 90px;
 }
 
+.button-block__button {
+    background-color: #f1f1f1;
+}
+
+.button-block__number {
+    background-color: #dff5ff;
+}
+
 .button-block__button, .button-block__clear {
     height: 60px;
     width: 70px;
     border: 1px black solid;
+    border-radius: 5px;
 }
 
 .button-block__equal {
     height: 60px;
     width: 144px;
     border: 1px black solid;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.button-block__clear {
+    background-color: #f1f1f1;
 }

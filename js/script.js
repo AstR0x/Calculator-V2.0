@@ -20,28 +20,25 @@ $(document).ready(function() {
     })
 
     equal.click(function() {
-        display.val(eval(display.val()));
+        var result = eval(display.val());
+        result = (result.toFixed(5));
+        result = result.toString();
+        result = delNull(result);
+        display.val(result);
     })
 
+    function delNull(num) {
+        var i = num.length - 1;
+        while (num[i] == '0') {
+            i--;
+        }
+        if (num[i] == '.') {
+            return num.slice(0, i)
+        }
+        return num.slice(0, i + 1);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 })
