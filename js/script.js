@@ -8,7 +8,7 @@ $(document).ready(function() {
     var percent = $('.button-block__button_percent');
     var squaring = $('.button-block__button_squaring');
     var cubing = $('.button-block__button_cubing');
-    var operations = $('.operations-block__button');
+    var remove = $('.button-block__button_remove');
 
     key.each(function() {
         var current = $(this).attr('value');
@@ -24,14 +24,12 @@ $(document).ready(function() {
     })
 
     sqrt.click(function() {
-        display.val(Math.sqrt(eval(display.val())));
+        var result = Math.sqrt(eval(display.val())).toFixed(5);
+        display.val(result);
     })
 
     percent.click(function() {
         var result = eval(display.val());
-        result = (result.toFixed(5));
-        result = result.toString();
-        result = delNull(result);
         display.val(result * 0.01);
     })
 
@@ -41,6 +39,11 @@ $(document).ready(function() {
 
     cubing.click(function() {
         display.val(Math.pow(eval(display.val()), 3));
+    })
+
+    remove.click(function() {
+        var newVal = display.val().slice(0, display.val().length - 1);
+        display.val(newVal);
     })
 
     equal.click(function() {
