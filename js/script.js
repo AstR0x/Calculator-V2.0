@@ -2,8 +2,12 @@ $(document).ready(function() {
     var display = $('.display__input');
     var key = $('.button-block button');
     var button = $('.button-block__button')
-    var clear = $('.button-block__clear');
-    var equal = $('.button-block__equal');
+    var clear = $('.button-block__button_clear');
+    var equal = $('.button-block__button_equal');
+    var sqrt = $('.button-block__button_sqrt');
+    var percent = $('.button-block__button_percent');
+    var squaring = $('.button-block__button_squaring');
+    var cubing = $('.button-block__button_cubing');
     var operations = $('.operations-block__button');
 
     key.each(function() {
@@ -17,6 +21,26 @@ $(document).ready(function() {
 
     clear.click(function() {
         display.val('');
+    })
+
+    sqrt.click(function() {
+        display.val(Math.sqrt(eval(display.val())));
+    })
+
+    percent.click(function() {
+        var result = eval(display.val());
+        result = (result.toFixed(5));
+        result = result.toString();
+        result = delNull(result);
+        display.val(result * 0.01);
+    })
+
+    squaring.click(function() {
+        display.val(Math.pow(eval(display.val()), 2));
+    })
+
+    cubing.click(function() {
+        display.val(Math.pow(eval(display.val()), 3));
     })
 
     equal.click(function() {
@@ -37,8 +61,5 @@ $(document).ready(function() {
         }
         return num.slice(0, i + 1);
     }
-
-    
-
 
 })
