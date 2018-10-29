@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Calculator</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,9 +23,9 @@
                         </div>
                         <div class="button-block">
                             <div>
-                                <button type="button" value="&#8592;" class="button-block__button_remove"></button>
-                                <button type="button" value="x&sup2" class="button-block__button_squaring"></button>
-                                <button type="button" value="x&sup3" class="button-block__button_cubing"></button>
+                                <button type="button" value="&#8592;" class="button-block__button_remove button-block__button_special"></button>
+                                <button type="button" value="x&sup2" class="button-block__button_squaring button-block__button_special"></button>
+                                <button type="button" value="x&sup3" class="button-block__button_cubing button-block__button_special"></button>
                                 <button type="button" value="(" class="button-block__button"></button>
                                 <button type="button" value=")" class="button-block__button"></button>
                             </div>
@@ -33,14 +34,14 @@
                                 <button type="button" value="8" class="button-block__button button-block__number"></button>
                                 <button type="button" value="9" class="button-block__button button-block__number"></button>
                                 <button type="button" value="/" class="button-block__button"></button>
-                                <button type="button" value="%" class="button-block__button_percent"></button>
+                                <button type="button" value="%" class="button-block__button_percent, button-block__button_special"></button>
                             </div>
                             <div>
                                 <button type="button" value="4" class="button-block__button button-block__number"></button>
                                 <button type="button" value="5" class="button-block__button button-block__number"></button>
                                 <button type="button" value="6" class="button-block__button button-block__number"></button>
                                 <button type="button" value="*" class="button-block__button"></button>
-                                <button type="button" value="&#8730;" class="button-block__button_sqrt"></button>
+                                <button type="button" value="&#8730;" class="button-block__button_sqrt button-block__button_special"></button>
                             </div>
                             <div>
                                 <button type="button" value="1" class="button-block__button button-block__number"></button>
@@ -52,8 +53,8 @@
                             <div>
                                 <button type="button" value="0" class="button-block__button button-block__number button-block__button_null"></button>
                                 <button type="button" value="," class="button-block__button button-block__number"></button>
-                                <button type="button" value="c" class="button-block__button_clear"></button>
-                                <button type="button" value="=" class="button-block__button_equal"></button>
+                                <button type="button" value="c" class="button-block__button_clear button-block__button_special"></button>
+                                <button type="button" value="=" class="button-block__button_equal button-block__button_special"></button>
                             </div>
                         </div>
                     </form>

@@ -57,9 +57,7 @@ footer {
     background-color: #F78154;
 }
 
-.button-block__button, .button-block__button_clear,
-.button-block__button_sqrt, .button-block__button_percent, .button-block__button_squaring,
-.button-block__button_cubing, .button-block__button_remove{
+.button-block__button, .button-block__button_special {
     height: 60px;
     width: 70px;
     border: 1px black solid;
@@ -89,6 +87,48 @@ footer {
     align-items: center;
     height: 150px;
 }
+
+
+@media screen and (max-width: 720px) {
+
+    header {
+        height: 30px;
+    }
+
+    .calculator-block {
+        margin: 50px auto 0;
+        height: 500px;
+        width: 330px;
+    }
+
+    .button-block__button, .button-block__button_special {
+        height: 60px;
+        width: 55px;
+        border: 1px black solid;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+    }
+
+    .button-block__button_equal {
+        height: 60px;
+        width: 114px;
+        border: 1px black solid;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+    }
+
+    section {
+        width: 360px;
+        margin: 0 auto;
+        flex: 1 0 auto;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
 
 
 
