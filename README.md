@@ -1,4 +1,4 @@
-# calculator-V2.0
+# calculator-v2.0
 
 This calculator allows you to perform mathematical operations. The calculator is adapted for mobile devices.
 
@@ -9,7 +9,7 @@ This calculator allows you to perform mathematical operations. The calculator is
 #### Second method
 1. Download and unzip the repository.
 2. Open calculator-v2.0-master folder.
-3. Launch index.html
+3. Launch index.html.
 
 ## Screenshot
 ![screenshot](https://github.com/AstR0x/calculator-v2.0/blob/master/img/screenshots/screenshot.png)
