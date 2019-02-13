@@ -12,6 +12,6 @@ This calculator allows you to perform mathematical operations. The calculator is
 3. Launch index.html.
 
 ## Screenshot
-![screenshot](https://github.com/AstR0x/calculator-v2.0/blob/master/img/screenshots/screenshot.png)
+![screenshot](https://github.com/AstR0x/astr0x.github.io/blob/master/screenshots/calculator-V2.0.png)
 
 
